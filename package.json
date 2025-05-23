@@ -1,0 +1,25 @@
+{
+  "name": "day1",
+  "version": "1.0.0",
+  "description": "learning backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "Hoale",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "16.5.0",
+    "ejs": "3.1.10",
+    "express": "5.1.0",
+    "mysql2": "^3.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.10"
+  }
+}

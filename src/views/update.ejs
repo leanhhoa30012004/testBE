@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="home">Home</a>
+      <a class="active" href="create">Create User</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <form action="update-user" method="post">
+      <h2>Update Form</h2>
+      <fieldset>
+        <legend>Update form</legend>
+        <div class="input-container">
+          <i class="fa fa-envelope icon"></i>
+          <input
+            class="input-field"
+            type="text"
+            placeholder="Email"
+            name="email"
+          />
+        </div>
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input
+            class="input-field"
+            type="text"
+            placeholder="Username"
+            name="name"
+          />
+        </div>
+
+        <div class="input-container">
+          <i class="fas fa-city icon"></i>
+          <input
+            class="input-field"
+            type="text"
+            placeholder="City"
+            name="city"
+          />
+        </div>
+
+        <button type="submit" class="btn">Update</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
