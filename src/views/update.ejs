@@ -13,10 +13,11 @@
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
     </div>
-    <form action="update-user" method="post">
-      <h2>Update Form</h2>
+    <form action="../update-user" method="post">
+      <h2>Update ID <%=id%> Form</h2>
       <fieldset>
         <legend>Update form</legend>
+        <input type="hidden" name="id" value="<%= id %>" />
         <div class="input-container">
           <i class="fa fa-envelope icon"></i>
           <input

@@ -17,8 +17,9 @@ router.post("/update-user", postUpdateUser);
 router.get("/create", (req, res) => {
   res.render("createUser.ejs");
 });
-router.get("/update", (req, res) => {
-  res.render("update.ejs");
+router.get("/update/:id", (req, res) => {
+  let id = req.params.id;
+  res.render("update.ejs", { id: id });
 });
 
 module.exports = router;

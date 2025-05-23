@@ -29,13 +29,13 @@ const postCreateUser = async (req, res) => {
   return getHome(req, res);
 };
 const postUpdateUser = async (req, res) => {
-  let { email, name, city } = req.body;
-  console.log("Email: ", email, "name: ", name, "city: ", city);
+  let { id, email, name, city } = req.body;
+  console.log("id: ", id, ",name: ", name, "city: ", city);
   let { results, fields } = await connection.query(
     `UPDATE Users
 SET email=?, name=?, city=?
-WHERE id=1;`,
-    [email, name, city]
+WHERE id=?;`,
+    [email, name, city, id]
   );
   return getHome(req, res);
 };

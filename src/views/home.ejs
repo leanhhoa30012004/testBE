@@ -29,7 +29,9 @@
         <td><%= user.name %></td>
         <td><%= user.city %></td>
         <td>
-          <button onclick="window.location.href='update'">Update</button>
+          <button onclick="window.location.href='update/<%= user.id %>'">
+            Update
+          </button>
           <button>Delete</button>
         </td>
       </tr>
